@@ -1,54 +1,88 @@
-# Prompt Submission: College Canteen Operations & Strategy Planner
+# College Canteen Strategy — ₹10,000 One-Week Challenge
 
-## Prompt Metadata
-- **Domain:** Business Operations & Financial Modeling
-- **Task Type:** Constrained Optimization & Business Planning
-- **Target Model:** Advanced LLM / Analytical Reasoning Model
+You are a **college canteen operations and business strategist**. Your task is to design the best practical plan for improving a college canteen using a **maximum budget of ₹10,000 for exactly one week**.
 
----
+## Objective
 
-## Prompt Text
+Create a financially realistic canteen strategy that balances:
 
-```text
-Act as a college canteen operations and business strategist. I have a hard budget cap of ₹10,000 to optimize and run a college canteen for exactly one week. Design a practical, profitable, and student-friendly operational plan.
+- Student affordability
+- Demand and popularity
+- Profitability
+- Food wastage
+- Preparation time
+- Inventory constraints
+- Peak-hour demand
 
-### Baseline Parameters & Assumptions
-- **Customer Base:** 500 potential college students (highly price-sensitive; prioritizing filling, quick-to-serve, affordable items).
-- **Operating Schedule:** 6 days per week.
-- **Budget Limit:** Total expenditure must strictly not exceed ₹10,000.
-- **Cost Scope:** Raw ingredients, disposable packaging, and an emergency contingency reserve.
+You must decide:
 
----
+1. **What food and drinks to offer**
+2. **Selling price for each item**
+3. **How many units to prepare**
+4. **How much of the ₹10,000 budget to allocate**
+5. **How to respond to changing demand during the week**
 
-### Key Requirements
+## Constraints
 
-#### 1. Menu Design & Unit Economics (5–7 Items)
-Select 5 to 7 food and drink items based on affordability, popularity, low prep time, and demand stability. For every item, provide:
-- Selling price (₹)
-- Cost per serving (₹)
-- Total servings to prepare for the 6-day week
-- Expected daily demand
-- Expected total weekly profit (₹)
+- Total available budget: **₹10,000**
+- Duration: **7 days**
+- The plan must be realistic for a college environment.
+- Students are price-sensitive.
+- Do not assume unlimited kitchen capacity, staff, ingredients, or storage.
+- Do not spend more than ₹10,000.
+- Avoid unrealistic sales or profit projections.
+- If important information is missing, make reasonable assumptions and **state them explicitly before calculating**.
+- Keep the menu operationally simple enough for a normal college canteen.
 
-#### 2. Financial Allocation
-Allocate the ₹10,000 budget across:
-- Ingredient procurement
-- Packaging materials
-- Emergency/contingency reserve
-Ensure the sum of these expenses is strictly less than or equal to ₹10,000.
+## Required Analysis
 
-#### 3. Operational Protocols
-Detail clear, operational procedures for:
-- **Peak Hour Surges:** Queue management and rapid throughput without bottlenecks.
-- **Unsold Inventory:** End-of-day waste mitigation and safe repurposing or discounting.
-- **Supply Shortages:** Rapid fallback rules if high-demand items sell out early.
-- **Promotions:** Low-complexity combo deals or off-peak pricing mechanisms.
+Choose **5–7 items** and create a table containing:
 
----
+| Item | Estimated Cost/Unit | Selling Price | Planned Quantity | Expected Demand | Expected Revenue | Expected Cost | Expected Profit |
+|---|---:|---:|---:|---:|---:|---:|---:|
 
-### Output Format Requirements
-1. **Menu Economics Table:** Columns for Item Name, Cost/Serving, Selling Price, Weekly Volume, Weekly Cost, Weekly Revenue, and Net Profit.
-2. **Budget Allocation Table:** Itemized breakdown proving total expenses $\le$ ₹10,000.
-3. **Demand & Waste Strategy:** Concise, numbered operational steps.
-4. **Financial Summary:** Total Cost, Total Projected Revenue, Total Net Profit, and Return on Investment (ROI %).
-5. **Constraint Check:** Verify that all unit calculations match the total spending and do not exceed the ₹10,000 budget.
+Then provide:
+
+### 1. Budget Allocation
+Show exactly how the ₹10,000 is distributed between:
+- Ingredients/inventory
+- Packaging or serving materials
+- Contingency/emergency reserve
+
+### 2. Demand Management
+Explain a simple system for adjusting production based on actual sales.
+
+Include what the canteen should do when:
+- Demand is higher than expected
+- Demand is lower than expected
+- An item sells out early
+- Food is likely to remain unsold
+- Ingredient prices or availability change
+
+### 3. Pricing Strategy
+Explain why each item's price is appropriate for a price-sensitive college audience while still allowing the canteen to operate profitably.
+
+### 4. Seven-Day Operating Plan
+Give a simple day-by-day strategy showing how production quantities can change based on previous-day sales.
+
+### 5. Financial Summary
+
+Calculate:
+
+- Total planned expenditure
+- Total expected revenue
+- Total expected profit
+- Overall profit margin
+- Break-even point, where practical
+
+**Check every calculation for consistency.**
+
+## Output Rules
+
+- Start with the assumptions.
+- Use Markdown tables wherever numerical information is presented.
+- Show calculations clearly but concisely.
+- Do not invent external market statistics or claim certainty about student preferences.
+- Clearly label estimates as estimates.
+- Prioritize practical execution over theoretical business jargon.
+- End with a concise **"Final One-Week Plan"** containing the recommended menu, prices, quantities, budget allocation, and demand-control strategy.
